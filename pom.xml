@@ -10,6 +10,7 @@
  <properties>
 		<spring.version>4.0.1.RELEASE</spring.version>
 	</properties>
+	
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -58,5 +59,17 @@
   </dependencies>
   <build>
     <finalName>Hello</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.6.1</version>
+        <configuration>
+          <verbose>true</verbose>
+          <fork>true</fork>
+          <compilerVersion>1.7</compilerVersion>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 </project>
